@@ -22,8 +22,8 @@ module.exports = {
         loader: cssExtractTextPlugin.extract('style-loader', 'css-loader'),
       },
       {
-        test: /\.less$/,
-        loader: cssExtractTextPlugin.extract('style-loader', 'css-loader!less-loader'),
+        test: /\.scss$/,
+        loader: cssExtractTextPlugin.extract('style-loader', 'css-loader!sass-loader'),
       },
       {
         test: /\.html$/,
