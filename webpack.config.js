@@ -7,14 +7,14 @@ var cssExtractTextPlugin = new ExtractTextPlugin('[contenthash].css');
 
 module.exports = {
   entry: {
-    'script': './scripts/index.js',
+    'script': './scripts/index.jsx',
     'index.html': './index.html',
   },
 
   module: {
     loaders: [
       { test: /\.json$/, loader: 'json-loader'},
-      { test: /\.js$/, exclude: /(node_modules|bower_components)\//, loader: 'babel-loader'},
+      { test: /\.jsx$/, exclude: /(node_modules|bower_components)\//, loader: 'babel-loader'},
       { test: /\.(ttf.*|eot.*|woff.*|ogg|mp3)$/, loader: 'file-loader'},
       { test: /.(png|jpe?g|gif|svg.*)$/, loader: 'file-loader!img-loader?optimizationLevel=7&progressive=true'},
       {
@@ -42,7 +42,7 @@ module.exports = {
 
   resolve: {
     root: path.join(__dirname, 'scripts'),
-    extensions: ['', '.js', '.json'],
+    extensions: ['', '.js', '.json', '.jsx'],
   },
 
   output: {
