@@ -1,11 +1,11 @@
-# Webpack Single Page Boilerplate
+# React Webpack Boilerplate
 
-A boilerplate for a single page app using [webpack][webpack_link]
+A boilerplate for a single page app using [webpack][webpack_link] and [ReactJS](https://facebook.github.io/react)
 
 [![Build
-Status](https://travis-ci.org/nihey/webpack-single-page-boilerplate.svg)](https://travis-ci.org/nihey/webpack-single-page-boilerplate)
+Status](https://travis-ci.org/BrOrlandi/react-webpack-boilerplate.svg)](https://travis-ci.org/BrOrlandi/react-webpack-boilerplate)
 [![Dependency
-Status](https://david-dm.org/nihey/webpack-single-page-boilerplate.png)](https://david-dm.org/nihey/webpack-single-page-boilerplate)
+Status](https://david-dm.org/BrOrlandi/react-webpack-boilerplate.png)](https://david-dm.org/BrOrlandi/react-webpack-boilerplate)
 
 # Why should I use it
 
@@ -26,14 +26,14 @@ The general directory structure is:
 ├── environment.json
 ├── README.md
 ├── scripts/
-│   └── index.js
+│   └── index.jsx
 ├── styles/
-│   └── index.less
+│   └── index.scss
 └── webpack.config.js
 ```
 
 - Your javascript entry point is `scripts/index.js`
-- Your style entry point is `styles/index.less`
+- Your style entry point is `styles/index.scss`
 - 'environment.json' file provides optional environment variable settings,
   but you can delete it if you don't need it.
 
@@ -49,10 +49,11 @@ and scripts into their corresponding file in `dist` directory. This way, an
     <title>Sample App</title>
     <meta charset="utf-8">
     <link href="assets/images/favicon.png" rel="icon">
-    <link href="styles/index.less" rel="stylesheet">
+    <link href="styles/index.scss" rel="stylesheet">
   </head>
   <body>
-    <script src="scripts/index.js"></script>
+    <div id="react-body"></div>
+    <script src="script.js"></script>
   </body>
 </html>
 ```
@@ -69,6 +70,7 @@ Becomes this:
     <link href="d41d8cd98f00b204e9800998ecf8427e.css" rel="stylesheet">
   </head>
   <body>
+    <div id="react-body"></div>
     <script src="script.js"></script>
   </body>
 </html>
@@ -82,7 +84,7 @@ This boilerplate includes the following loaders:
   - `file-loader`: Call `require` for binary files.
   - `img-loader`: Optimize image compression.
   - `json-loader`: Call `require` for `json` files.
-  - `less-loader`: Style your pages with [less](http://lesscss.org/).
+  - `sass-loader`: Style your pages with [Sass](http://sass-lang.com/).
   - `style-loader`: Add exports of a module as style to DOM.
 
 It also uses the following plugins:
