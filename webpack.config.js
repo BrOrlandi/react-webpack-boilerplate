@@ -1,6 +1,7 @@
 var webpack = require('webpack'),
     ExtractTextPlugin = require('extract-text-webpack-plugin'),
     IndexHtmlPlugin = require('indexhtml-webpack-plugin'),
+    LiveReloadPlugin = require('webpack-livereload-plugin'),
     path = require('path');
 
 var cssExtractTextPlugin = new ExtractTextPlugin('[contenthash].css');
@@ -38,6 +39,7 @@ module.exports = {
     new webpack.DefinePlugin({
       Environment: JSON.stringify(require('config')),
     }),
+    new LiveReloadPlugin({appendScriptTag:true}),
   ],
 
   resolve: {

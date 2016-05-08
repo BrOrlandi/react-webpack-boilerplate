@@ -91,6 +91,7 @@ It also uses the following plugins:
 
   - `indexhtml-webpack-plugin`: Parses your html files content and build them.
   - `extract-text-webpack-plugin`: Extract css text from bundled styles.
+  - `webpack-livereload-plugin`: Gives livereload if your files is being served by other server than webpack-dev-server
 
 # License
 
