@@ -6,6 +6,7 @@
   "scripts": {
     "build": "webpack",
     "watch": "webpack -d --watch",
+    "dev": "webpack-dev-server",
     "production": "NODE_ENV=production webpack -p",
     "test": "eslint . && webpack -d && webpack -p"
   },
@@ -45,6 +46,7 @@
     "sass-loader": "^3.2.0",
     "style-loader": "^0.13.0",
     "webpack": "^1.13.0",
+    "webpack-dev-server": "^1.14.1",
     "webpack-livereload-plugin": "^0.8.1"
   }
 }
