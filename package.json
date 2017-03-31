@@ -48,5 +48,6 @@
     "webpack": "^1.13.0",
     "webpack-dev-server": "^1.14.1",
     "webpack-livereload-plugin": "^0.8.1"
-  }
+  },
+  "repository": "https://github.com/BrOrlandi/react-webpack-boilerplate.git"
 }
