@@ -1,4 +1,6 @@
-# React Webpack Boilerplate
+This repo is deprecated. Now uses: [https://github.com/BrOrlandi/react-boilerplate](https://github.com/BrOrlandi/react-boilerplate)
+
+# [DEPRECATED] React Webpack Boilerplate
 
 A boilerplate for a single page app using [webpack][webpack_link] and [ReactJS](https://facebook.github.io/react)
 
